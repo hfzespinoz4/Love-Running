@@ -238,6 +238,7 @@ hr{
 
 /*Media Querys Tablet*/
  @media screen and (max-width: 1393px){
+
    #club-ethos{
      width: 65%;
      height: 1200px;
@@ -262,6 +263,16 @@ hr{
      padding: 0;
    }
 
+   #times div{
+     width: 100%;
+     clear: both;
+     height: 150%;
+     border-style: solid;
+     border-bottom-width: 1px;
+     border-bottom-color: #ffffff;
+     padding: 0;
+   }
+
    hr{
      display:none;
    }
@@ -270,15 +281,49 @@ hr{
  /*Responsive Header*/
 
  @media screen and (max-width:943px){
-   #menu{
+    #menu{
      clear:left;
      float:left;
      margin-left:30px;
      margin-bottom:30px;
      line-height: 25px;
+    }
+
+    #cover-text{
+    left:0px;
+    }
+
+    #club-ethos{
+      width: 90%;
+      height:1200px;
+      margin: 0 auto;
+    }
+
+  .left-about-heading, .right-about-heading{
+    width: inherit;
   }
 
+  .left-about-heading h3, .right-about-heading h3{
+    width: 100%;
+    text-align: center;
+  }
+
+  .left-about-heading p, .right-about-heading p{
+    text-align: center;
+    padding: 0 20px 0 20px;
+  }
+
+  .center-about{
+    margin: 0 auto;
+  }
+  /*Responsive Meeting Times*/
+
+  #photo{
+    column-count: 3;
+  }
   
+ }
 
-
+ @media screen and (max-width: 800px){
+   column-count: 2;
  }
